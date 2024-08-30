@@ -31,11 +31,11 @@ const displayEntries = () => {
 
     const table = `<table class="table-auto w-full">
         <tr>
-            <th class="px-4 py-2">Name</th>
-            <th class="px-4 py-2">Email</th>
-            <th class="px-4 py-2">Password</th>
-            <th class="px-4 py-2">Date of Birth</th>
-            <th class="px-4 py-2">Accepted Terms?</th>
+            <th class="border 2px solid black px-4 py-2">Name</th>
+            <th class="border 2px solid black px-4 py-2">Email</th>
+            <th class="border 2px solid black px-4 py-2">Password</th>
+            <th class="border 2px solid black px-4 py-2">Date of Birth</th>
+            <th class="border 2px solid black px-4 py-2">Accepted Terms?</th>
         </tr>
         ${tableEntries}
     </table>`;
