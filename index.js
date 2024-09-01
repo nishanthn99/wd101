@@ -48,7 +48,7 @@ const addlocal = (event) => {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let dob = document.getElementById('dob').value;
-    let terms = document.getElementById('terms').value;
+    let terms = document.getElementById('terms').checked;
 
     let userValue = {
         name,
