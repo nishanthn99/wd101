@@ -30,13 +30,13 @@ const displayEntries = () => {
     }).join("\n");
 
     const table = `<table class="table-auto w-full">
-        <tr>
+        <thead>
             <th class="border 2px solid black px-4 py-2">Name</th>
             <th class="border 2px solid black px-4 py-2">Email</th>
             <th class="border 2px solid black px-4 py-2">Password</th>
             <th class="border 2px solid black px-4 py-2">Date of Birth</th>
             <th class="border 2px solid black px-4 py-2">Accepted Terms?</th>
-        </tr>
+        </thead>
         ${tableEntries}
     </table>`;
     let details = document.getElementById("userEntries");
@@ -48,7 +48,7 @@ const addlocal = (event) => {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let dob = document.getElementById('dob').value;
-    let terms = document.getElementById('terms').checked;
+    let terms = document.getElementById('terms').value;
 
     let userValue = {
         name,
