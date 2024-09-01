@@ -1,6 +1,5 @@
 let userForm = document.getElementById("user_form");
 
-// Function to retrieve entries from localStorage
 const retrieveEntries = () => {
     let entries = localStorage.getItem("user-input");
     if (entries) {
@@ -23,7 +22,7 @@ const displayEntries = () => {
         const emailCell = `<td class="border px-4 py-2">${entry.email}</td>`;
         const passwordCell = `<td class="border px-4 py-2">${entry.password}</td>`;
         const dobCell = `<td class="border px-4 py-2">${entry.dob}</td>`;
-        const acceptTermsCell = `<td class="border px-4 py-2">${entry.terms ? 'True' : 'Flase'}</td>`;
+        const acceptTermsCell = `<td class="border px-4 py-2">${entry.terms ? 'True' : 'False'}</td>`;
 
         const row = `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
         return row;
